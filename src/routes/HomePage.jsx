@@ -40,7 +40,7 @@ function HomePage() {
 
   const [prompts, setPrompts] = useState(() => {
     const storedPrompts = localStorage.getItem("prompts");
-    return storedPrompts.length ? JSON.parse(storedPrompts) : defaultPrompts;
+    return storedPrompts ? JSON.parse(storedPrompts) : defaultPrompts;
   });
 
   // Initializing a random prompt
