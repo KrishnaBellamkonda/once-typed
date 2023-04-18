@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@300;400;500;700&display=swap');
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root, body {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+// bg color
+.bg-color {
+    background-color: #393646;
+}
+
+// Typography
+* {
+    font-family: 'Tomorrow', sans-serif;
+}
+
+p, h1, h2, h3, h4, button, li {
+    color: rgba(244, 242, 224, 1);
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+// Utility
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.center-aligned-container {
+    max-width: 60vw;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.large-gap {
+    gap: 2rem;
+}
+
+.medium-gap {
+    gap: 1rem;
+}
+
+.small-gap {
+    gap: 0.5rem;
+}
+
+.button {
+    font-size: 1.4rem;
+    height: 40px;
+    width: 240px;
+    padding-block: 5px;
+    padding-inline: 10px;
+    cursor: pointer;
+    color: black;
+    border: 0;
+    color: black;
+}
+
+.cream-background-color {
+    background-color: "#F4F2E0";
+}
+
+.yellow-background-color {
+    background-color: rgb(226, 240, 21);
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    padding-inline: 1rem;
+}
+
+.info-icon {
+    width: 24px;
+    height: 24px;
+}
+
+// Header
+.home-page {
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 6rem;
+    line-height: 1.6em;
+}
+
+header {
+    max-width: 100%;
+    max-height: 15vh;
+    gap: 6rem
+}
+
+nav {
+    flex: 1;
+
+    li {
+        list-style: none;
+    }
+
+    
+}
+
+// Desc
+.desc {
+    font-size: 1.4rem;
+    font-weight: 300;
+    max-width: 80%;
+    color: rgb(156, 131, 158);
+
+}
+
+//Timer select
+.timer-heading {
+    font-size: 3rem;
+}
+
+.timer-select {
+    width: 120px;
+    
+}
+
+// Text Area
+textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    font-size: 16px;
+    color: #F8F8F8;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  
+    &:focus {
+      outline: none;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  
+    &::placeholder {
+      color: #999;
+    }
+  }
+
+
+.prompt-text {
+    width: 94%;
+}
+
+.text-input-area {
+    max-width: 80%;
+}
+
+.text-input-header {
+    background-color: #444242;
+    padding-block: 0.5rem;
+    padding-inline: 0.5rem;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.redo-icon {
+    width: 2rem;
+    height: 2rem;
+    stroke-width: 50px;
+}
+
+// Graph
+.stats-label {
+    font-size: 2rem;
+    color: #8d8d8d;
+}
+
+.stats-content {
+    font-size: 5rem;
+}
+
+.graph {
+    width: clamp(50%, 90%, 900px);
+}
+
+
+// History Page
+.history-page {
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.history-components {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+    grid-auto-rows: 50vh;
+    grid-gap: 2rem;
+}
+
+.history-component {
+    border: 1px solid #F4F2E0;
+    border-radius: 24px;
+}
+
+.history-header {
+    padding-inline: 2rem;
+    padding-block: 2rem;
+
+}
+
+.history-prompt-text {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.history-content {
+    background-color: #6D5D6E;
+    border-radius:24px;
+    flex-grow: 1;
+    padding-inline: 2rem;
+    padding-block: 2rem;
+}
+
+// add-prompts
+.add-prompts-page {
+    min-width: 100vw;
+    min-height: 100vh;
+
+}
+
+// prompt-tab
+.prompt-tab {
+    background-color: #333;
+    padding-block: 2rem;
+    color: #F4F2E0;
+    border-radius: 10px;
+}
+
+.prompt-icon {
+    padding-inline: 2rem;
+}
+
+.prompt-content {
+    border-inline-end: 1px solid #adadad;
+    padding-inline: 1rem;
+    flex-grow: 1;
+}
+
+
+// Footer
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding-block: 1rem;
+
+}
+
+.social-icons {
+    padding-inline: 1rem;
+}
+
